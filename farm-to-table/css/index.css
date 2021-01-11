@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     max-width: 100%;
-    /* border:1px solid grey; */
 }
 /* General Styles */
 html{
@@ -231,4 +230,106 @@ footer div{
     display:flex;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+/*Media Queries*/
+/*Tablet*/
+@media (max-width:800px){
+    header nav{
+        height:6vh;
+    }
+    .links{
+        width:70%;
+    }
+    #about .text{
+        width:80%;
+    }
+    .gallery div{
+        height: 35vh;
+    }
+    .gallery div .hide{
+        background-color: #fff;
+        display:block;
+        width:70%;
+        height:5vh;
+    }
+    .gallery div .hide h2{
+        font-size: 2.2rem;
+    }
+    .contact-info{
+        width:50%;
+    }
+    .img-container{
+        width: 80%;
+    }
+    .left{
+        width:60%;
+    }
+    .right{
+        width: 40%;
+    }
+}
+
+/*Mobile*/
+
+@media (max-width:500px){
+    header nav{
+        flex-direction:column;
+        height:11vh;
+    }
+    .links{
+        width:100%;
+    }
+    .logo{
+        text-align:center;
+    }
+    .titles{
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    #top{
+        height:40vh;
+        background-position: center;
+        margin-top:23%;
+    }
+    .container{
+        flex-wrap:wrap;
+    }
+    .box{
+        width:80%;
+        margin:2% 0;
+    }
+    #about .text{
+        width:90%;
+    }
+    .gallery div{
+        width:90%;
+    }
+    #contact{
+        justify-content: center;
+    }
+    .left, .right{
+        width:90%;
+    }
+    .right{
+        order: -1;
+    }
+    #contact h2{
+        order: -2;
+    }
+    .img-container{
+        width:90%;
+    }
+    .contact-info{
+        width:90%;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    footer div{
+        width:90%;
+        margin:4% 0;
+    }
+    .copyright{
+        justify-content: flex-start;
+    }
 }
